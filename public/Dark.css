@@ -43,4 +43,11 @@ body .main h4 {
 
 .divider {
   background: hsl(228, 28%, 20%);
+}
+
+.attribution {
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
 }/*# sourceMappingURL=Dark.css.map */

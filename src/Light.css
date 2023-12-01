@@ -1,0 +1,46 @@
+.backgroundTop {
+  background: #f8f9fe;
+}
+
+body {
+  background: hsl(0, 0%, 100%);
+}
+body .main h2 {
+  color: hsl(230, 17%, 14%);
+}
+body .main h4 {
+  color: hsl(228, 34%, 66%);
+}
+
+.bigCard {
+  background: hsl(227, 47%, 96%);
+}
+.bigCard .cardTop h3 {
+  color: hsl(230, 17%, 14%);
+}
+.bigCard .cardCenter h1 {
+  color: hsl(230, 17%, 14%);
+}
+.bigCard .cardCenter h4 {
+  color: hsl(228, 34%, 66%);
+}
+
+.bigCard:hover {
+  background: hsl(228, 44%, 80%);
+}
+
+.smallCard {
+  background: hsl(227, 47%, 96%);
+}
+
+.smallCard:hover {
+  background: hsl(228, 44%, 80%);
+}
+
+.themeSwitcher p {
+  color: hsl(228, 34%, 66%);
+}
+
+.divider {
+  background: hsl(227, 47%, 96%);
+}/*# sourceMappingURL=Light.css.map */

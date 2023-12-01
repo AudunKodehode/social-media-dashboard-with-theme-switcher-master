@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.backgroundTop {
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 205px;
+  z-index: -1;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .main {
+  display: flex;
+  flex-direction: column;
+}
+body .main .divTop {
+  display: flex;
+  justify-content: space-between;
+}
+body .main .divTop .divider {
+  width: 95%;
+  height: 2px;
+  align-self: center;
+  display: none;
+}
+body .main .divTop .divLeft {
+  padding: 30px 0 30px 0;
+}
+body .main .divTop .divRight {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px 0 30px 0;
+}
+body .main .dashBoardContainer {
+  justify-content: center;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-self: center;
+}
+body .main .overviewContainer {
+  justify-content: center;
+  -moz-column-gap: 38px;
+       column-gap: 38px;
+  row-gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-self: center;
+}
+body .main .midContainer {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bigCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 255px;
+  height: 200px;
+  border-radius: 5px;
+}
+.bigCard .cardTop {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+}
+.bigCard .cardTop img {
+  width: 20px;
+  height: 20px;
+}
+.bigCard .cardTop h3 {
+  font-weight: 400;
+  font-size: 14px;
+}
+.bigCard .cardCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+.bigCard .cardCenter h1 {
+  font-weight: 700;
+  font-size: 48px;
+}
+.bigCard .cardCenter h4 {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+.bigCard .cardBottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+.bigCard .cardBottom img {
+  width: 8px;
+  height: 6px;
+}
+.bigCard .cardBottom p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.facebook {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.twitter {
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  position: relative;
+}
+
+.instagram::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-image: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+}
+
+.youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+.smallCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 255px;
+  height: 125px;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 5px;
+}
+.smallCard .cardTop {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.smallCard .cardBottom {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.smallCard .cardBottom .cardBottomLeft {
+  font-weight: 700;
+  font-size: 20px;
+}
+.smallCard .cardBottom .cardBottomRight {
+  display: flex;
+  align-items: center;
+  padding-top: 12px;
+  gap: 4px;
+}
+.smallCard .cardBottom .cardBottomRight img {
+  width: 8px;
+  height: 6px;
+}
+.smallCard .cardBottom .cardBottomRight p {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.trans1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.themeSwitcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 10px;
+}
+.themeSwitcher p {
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(163, 72%, 41%);
+}
+.themeSwitcher .themeSwitch {
+  display: flex;
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  align-items: center;
+  padding: 0 5px;
+}
+.themeSwitcher .switchHandle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+.themeSwitcher .switchDark {
+  justify-content: flex-start;
+  background: linear-gradient(90deg, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+}
+.themeSwitcher .switchDark .switchHandle {
+  background: hsl(230, 17%, 14%);
+}
+.themeSwitcher .switchLight {
+  justify-content: flex-end;
+  background: gray;
+}
+.themeSwitcher .switchLight .switchHandle {
+  background: hsl(0, 0%, 100%);
+}
+
+.up p {
+  color: hsl(163, 72%, 41%);
+}
+
+.down p {
+  color: hsl(356, 69%, 56%);
+}
+
+@media screen and (max-width: 1170px) {
+  body .main .dashBoardContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  body .main .overviewContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 570px) {
+  body .main .dashBoardContainer {
+    grid-template-columns: 1fr;
+  }
+  body .main .overviewContainer {
+    grid-template-columns: 1fr;
+  }
+  .divTop {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .divTop .divLeft {
+    margin-left: 24px;
+  }
+  body .main .divTop .divider {
+    display: flex;
+  }
+  .divRight {
+    width: 100vw;
+  }
+  .themeSwitcher {
+    width: 100%;
+    justify-content: center;
+    padding: 0;
+    gap: 60%;
+  }
+  .bigCard {
+    width: 90vw;
+  }
+  .smallCard {
+    width: 90vw;
+  }
+  .midContainer {
+    margin-left: 24px;
+  }
+}
+.attribution {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: wheat;
+}
+.attribution a {
+  color: white;
+}/*# sourceMappingURL=App.css.map */

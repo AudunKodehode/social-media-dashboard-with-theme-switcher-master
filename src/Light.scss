@@ -1,0 +1,54 @@
+$color1: hsl(0, 0%, 100%);
+$color2: hsl(227, 47%, 96%);
+$color3: hsl(228, 34%, 66%);
+$color4: hsl(230, 17%, 14%);
+$color5: hsl(228, 44%, 80%);
+$light1: hsl(0, 0%, 100%);
+.backgroundTop {
+    background: #f8f9fe;
+  }
+body {
+  background: $color1;
+  .main {
+    h2 {
+      color: $color4;
+    }
+    h4 {
+      color: $color3;
+    }
+  }
+}
+.bigCard {
+  background: $color2;
+  .cardTop {
+    h3 {
+      color: $color4;
+    }
+  }
+  .cardCenter {
+    h1 {
+      color: $color4;
+    }
+    h4 {
+      color: $color3;
+    }
+  }
+}
+.bigCard:hover {
+  background: $color5;
+}
+.smallCard {
+  background: $color2;
+}
+.smallCard:hover {
+  background: $color5;
+}
+.themeSwitcher {
+  p {
+    color: $color3;
+  }
+}
+.divider {
+    background: $color2;
+  }
+  

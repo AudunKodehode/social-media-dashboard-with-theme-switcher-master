@@ -125,8 +125,8 @@ function App() {
 
         <style jsx>{`
           ${darkTheme === true
-            ? "@import url('src/Dark.css')"
-            : "@import url('src/Light.css')"}
+            ? "@import url('Dark.css')"
+            : "@import url('Light.css')"}
         `}</style>
           <div className="attribution">
     <p>Challenge by <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank" rel="noreferrer">Frontend Mentor</a>. 

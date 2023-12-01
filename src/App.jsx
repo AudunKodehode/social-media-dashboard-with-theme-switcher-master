@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <div className="main">
-    <div className="backgroundTop"></div>
+        <div className="backgroundTop"></div>
         <div className="divTop">
           <div className="divLeft">
             <h2>Social Media Dashboard</h2>
@@ -125,13 +125,30 @@ function App() {
 
         <style jsx>{`
           ${darkTheme === true
-            ? "@import url('Dark.css')"
-            : "@import url('Light.css')"}
+            ? "@import url('public/Dark.css')"
+            : "@import url('public/Light.css')"}
         `}</style>
-          <div className="attribution">
-    <p>Challenge by <a href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H" target="_blank" rel="noreferrer">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/AudunKodehode" target="_blank" rel="noreferrer">AudunKodehode</a>.</p>
-  </div>
+        <div className="attribution">
+          <p>
+            Challenge by{" "}
+            <a
+              href="https://www.frontendmentor.io/challenges/social-media-dashboard-with-theme-switcher-6oY8ozp_H"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Frontend Mentor
+            </a>
+            . Coded by{" "}
+            <a
+              href="https://github.com/AudunKodehode"
+              target="_blank"
+              rel="noreferrer"
+            >
+              AudunKodehode
+            </a>
+            .
+          </p>
+        </div>
       </div>
     </>
   );

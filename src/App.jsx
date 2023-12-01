@@ -125,8 +125,8 @@ function App() {
 
         <style jsx>{`
           ${darkTheme === true
-            ? "@import url('/public/Dark.css')"
-            : "@import url('/public/Light.css')"}
+            ? "@import url('/Dark.css');"
+            : "@import url('/Light.css');"}
         `}</style>
         <div className="attribution">
           <p>
